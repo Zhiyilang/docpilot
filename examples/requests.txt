@@ -1,0 +1,12 @@
+# DocPilot 示例输入
+# 1) 杂乱发票文本（免费即可试审）
+python -m docpilot.cli examples/messy_invoice.txt
+
+# 2) 结构化 KEY:VALUE 多票（含重复票 + 价税不平，触发高风险）
+python -m docpilot.cli examples/structured_invoices.txt --structured --plan pro
+
+# 3) 生成 HTML 报告
+python -m docpilot.cli examples/structured_invoices.txt --structured --plan pro --html report.html
+
+# 4) 启动 Web 控制台
+python server.py   # 然后访问 http://localhost:8000
