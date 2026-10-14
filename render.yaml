@@ -1,0 +1,26 @@
+# Render Blueprint — 一键部署 DocPilot 到公共云（生产级 live demo）
+# 在 Render 里 New → Blueprint，选本仓库即可一键上线；凭据类变量留待控制台填写。
+services:
+  - type: web
+    name: docpilot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python server.py"
+    healthCheckPath: /healthz
+    envVars:
+      # Render 自动注入 PORT；应用读取 PORT 并绑定 0.0.0.0
+      - key: DOCPILOT_LLM_BASE
+        sync: false          # 例：https://api.openai.com/v1 （可选，留空则用离线引擎）
+      - key: DOCPILOT_LLM_KEY
+        sync: false          # 可选；缺失时自动回落到确定性离线提取
+      - key: DOCPILOT_LLM_MODEL
+        value: gpt-4o-mini
+      - key: PAYPAL_BASE
+        value: https://api-m.sandbox.paypal.com
+      - key: PAYPAL_CLIENT_ID
+        sync: false          # 沙盒凭据；缺失时催收链接降级为演示深链
+      - key: PAYPAL_SECRET
+        sync: false
+      - key: PAYPAL_MERCHANT
+        value: docpilot
