@@ -1,0 +1,16 @@
+Acme Office Supplies Co., Ltd.
+123 Commerce Street, Shanghai
+Invoice No: INV-2026-0901
+Invoice Date: 2026-09-15
+Payment Due: 2026-10-15
+Currency: CNY
+
+Description                 Qty   Unit Price    Amount
+Ergonomic Chairs            10    860.00        8600.00
+Standing Desks              2     2400.00       4800.00
+
+Subtotal: 13400.00
+Tax Rate: 13%
+VAT: 1742.00
+Total: 15142.00
+Status: unpaid
