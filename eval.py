@@ -139,5 +139,6 @@ check("pricing.business_api", get_plan("business").api_access is True)
 # ---------------------------------------------------------------------------
 print("\n" + "=" * 46)
 print(f"结果：{_passed} 通过 / {_failed} 失败")
+print(f"RESULT: {_passed} passed, {_failed} failed")
 print("=" * 46)
 sys.exit(1 if _failed else 0)
