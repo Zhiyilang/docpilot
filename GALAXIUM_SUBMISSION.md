@@ -17,7 +17,7 @@
 | **3. Operational MVP（可用原型）** | Web 控制台 + CLI + library API 三入口，端到端跑通"贴发票→抽字段→7 项风险检查→评分→催收链接" | ✅ `eval.py` 43 断言覆盖 |
 | **4. Executive Briefing（高管简报）** | `EXEC_BRIEF.md`（问题量化 / 方案 / 差异化 / 商业技术结构 / 诉求） | ✅ |
 | **5. Fiscal Architecture（货币化引擎）** | `MONETIZATION.md`（定价模型 + 代码位置 `pricing.py`/`metering.py` + 支付通道 + 单位经济 + 增长飞轮） | ✅ |
-| **6. Technical Keynote（2–5 分钟视频）** | `DEMO_SCRIPT.md`（逐镜头分镜，约 3 分钟，展示真实运行 + 货币化即产品） | ✅ 脚本就绪，**需用户侧录制上传** |
+| **6. Technical Keynote（2–5 分钟视频）** | **`docpilot_demo_long.mp4` 已由产线生成：2 分 24 秒**（终端风、真命令真输出：定价卡→干净票 0 分→问题票 2 HIGH 带证据+催收墙→HTML 报告→43 断言→收尾；脚本 `_videotool/scripts/docpilot_video_long.json`） | ✅ 成片就绪，**需用户侧上传 YouTube** |
 
 ---
 
@@ -35,7 +35,7 @@ Pre-payment AI invoice audit + one-click PayPal collections for small business.
 
 **Demo video URL**（录完上传 YouTube 后填）
 ```
-https://youtu.be/<你的视频ID>     # 见 DEMO_SCRIPT.md，约 3 分钟
+https://youtu.be/<你的视频ID>     # 上传 docpilot/docpilot_demo_long.mp4（2:24，已生成，勿再录屏）
 ```
 
 **Demo URL（实时部署，Render 部署后填）**
@@ -98,7 +98,7 @@ Python · Artificial Intelligence · Web · SaaS · FinTech
 ## 四、用户侧动作清单（3 步，约 40 分钟）
 
 1. **Render 部署**（~10 分钟）：见 `DEPLOY.md` —— 连 GitHub 仓 → New Web Service → `Build: pip install -r requirements.txt`（实际零依赖，可留空）→ `Start: python server.py` → 设 `PORT` 环境变量 → 部署。拿到 `https://docpilot.onrender.com`。
-2. **录视频**（~10 分钟）：照 `DEMO_SCRIPT.md` 分镜，本地 `python server.py` → 录屏 → 传 YouTube（可"不列出"）→ 拿链接。
+2. **传视频**（~5 分钟）：`docpilot/docpilot_demo_long.mp4`（2 分 24 秒，已由终端录屏产线生成，含全部官方要求的能力展示：审票/重复/证据/催收/HTML 报告/43 断言）→ 传 YouTube（可"不列出"）→ 拿链接。**无需自己录屏**；`DEMO_SCRIPT.md` 仅作内容对照。
 3. **填表提交**（~5 分钟）：把上面"二"里的字段粘贴进 Devpost 提交表 → 勾选技术栈标签 → 提交。
 
 > AI 侧已就绪：仓库已公开、所有交付文档齐全、代码自测 43/43 通过。你只需完成"部署 + 录制 + 点提交"这三件必须是真人的动作。
