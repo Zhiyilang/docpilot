@@ -2,7 +2,7 @@
 
 > 真实入口：**Devpost `galuxium-nexus-v2`**（平台 ID `devpost29411`）
 > 提交截止：**2026-10-31 07:30 EDT = 北京时间 10-31 19:30**
-> 奖池：**$14,644**（第一名 Nexus Flagship Award 等，最终分配由 Galuxium 评审团裁定）
+> 奖池：**名义 $14,644**（1st Nexus Sovereign $6,768 / 2nd $4,884 / 3rd $2,992）——⚠️ **2026-10-17 官方页复核：各奖项 Procurement Mandate 逐字说明奖金以 "live enterprise infrastructure keys, production API credits, and active licenses" 发放，名义 cash 实为 credits/licenses，按含实物口径不计现金池**；组织度黄旗：评委区仍在 "Looking for judges!"
 > 资格：**面向所有年龄段 / 全球开放**（官方 Devpost 规则页明文覆盖"students only"标签；排除标准例外地区，中国可参加）
 > 硬性交付：**公开 GitHub 仓库 + 实时部署 Demo + 2–5 分钟演示视频**——三者缺一即不完整
 
